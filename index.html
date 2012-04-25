@@ -1,0 +1,127 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Debbie Mowry</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+  <!--[if !IE 7]><style type="text/css">#content {display: table; height: 100%}</style><![endif]-->
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <hgroup>
+        <h1>Debbie Mowry</h1>
+        <h2 id="slogan">This would be a slogan.</h2>
+      </hgroup>
+      <form action method="get">
+        <label for="searchquery" class="visuallyhidden">Search for:</label>
+        <input id="searchquery" name="searchquery" type="search">
+        <input id="searchsubmit" type="submit" value="Search">
+      </form>
+      <nav id="mainNav">
+        <h2 class="visuallyhidden">Main navigation</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li  class="active"><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li class="last"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content" role="main">
+      <div id="main" role="main">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p><a href="http://demo.marcofolio.net/css3_jquery_animations" target="_blank">Test Link</a></p>
+        <p>Vestibulum aliquam diam eu lectus gravida viverra nec mollis justo. Ut elementum urna malesuada lectus imperdiet volutpat. Nulla eget euismod purus. Phasellus semper hendrerit sem. Integer rhoncus sagittis gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dapibus, augue quis interdum varius, eros justo fermentum magna, et ornare nisl dolor id leo.</p>
+      </div> <!-- end of #main -->    
+      <div id="sidebar">
+        <div id="spotlight-wrapper">
+          <aside class="block" id="spotlight1">
+            <h2>Spotlight 1</h2>
+            <p>Quisque non est mauris, pulvinar pharetra sem. Curabitur convallis adipiscing mi id elementum. In hac habitasse platea dictumst. Sed ut nisi non tortor pharetra elementum sodales eget turpis.</p>
+          </aside>
+          <aside class="block" id="spotlight3">
+            <h2>Spotlight 3</h2>
+            <p>Aliquam erat volutpat. In eleifend aliquet fringilla. Sed dignissim pellentesque nisl, at dictum purus condimentum ac. Donec hendrerit eros dui.</p>
+          </aside>
+        </div> <!-- end of #spotlight-wrapper -->
+        <aside class="block" id="spotlight2">
+          <h2>Spotlight 2</h2>
+          <p>Mauris non odio magna. Proin quis sollicitudin mi. Phasellus mi neque, faucibus et consequat at, mollis eget lacus. Duis bibendum, sem non fermentum tincidunt, nisi orci commodo urna, et dictum metus augue vitae tellus.</p>
+        </aside>
+      </div> <!-- end of #spotlights -->
+    </div> <!-- end of #content -->
+  </div> <!--! end of #container -->
+  <footer>
+    <p>This is a footer.</p>
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+</body>
+</html>
