@@ -1,0 +1,11 @@
+name = DebMowry Boilerplate
+description = HTML5, CSS3, and responsive theme.
+
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
+
+regions[header] = Header
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
