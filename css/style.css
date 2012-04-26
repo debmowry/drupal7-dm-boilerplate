@@ -333,12 +333,17 @@ footer {
 
 #sidebar .block {
   background: #ece9f1;
+  background: -moz-linear-gradient(top, #fafafc 10%, #ece9f1 90%);
+  background: -o-linear-gradient(top, #fafafc 10%, #ece9f1 90%);
+  background: -webkit-linear-gradient(top, #fafafc 10%, #ece9f1 90%);
+  background: linear-gradient(top, #fafafc 10%, #ece9f1 90%);
+  border: 1px solid #d4cee0;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  -moz-box-shadow: 1px 1px 4px #afb4ba;
+  /* -moz-box-shadow: 1px 1px 4px #afb4ba;
   -webkit-box-shadow: 1px 1px 4px #afb4ba;
-  box-shadow: 1px 1px 4px #afb4ba;
+  box-shadow: 1px 1px 4px #afb4ba; */
   margin-bottom: 10px;
   padding: 10px;
 }
@@ -407,13 +412,14 @@ input[type="submit"] {
 
 @media only screen and (min-width: 1200px) {
   header nav {
-    background-color: #ece9f1;
+    background: #ece9f1;
+    border: 1px solid #d4cee0;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    -moz-box-shadow: 1px 1px 4px #afb4ba;
+    /* -moz-box-shadow: 1px 1px 4px #afb4ba;
     -webkit-box-shadow: 1px 1px 4px #afb4ba;
-    box-shadow: 1px 1px 4px #afb4ba;
+    box-shadow: 1px 1px 4px #afb4ba; */
     margin-top: 20px;
     position: fixed;
     text-align: right;
@@ -424,7 +430,12 @@ input[type="submit"] {
     float: none;
   }
   header ul li {
-    border-bottom: 1px dashed #b5bfbb;
+    background: #ece9f1;
+    background: -moz-linear-gradient(top, #fafafc 0%, #ece9f1 100%);
+    background: -o-linear-gradient(top, #fafafc 0%, #ece9f1 100%);
+    background: -webkit-linear-gradient(top, #fafafc 0%, #ece9f1 100%);
+    background: linear-gradient(top, #fafafc 0%, #ece9f1 100%);
+    border-bottom: 1px solid #d4cee0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     float: none;
@@ -433,14 +444,14 @@ input[type="submit"] {
     border-bottom: none;
   }
   header ul li.active {
-    background: #f6f4f8 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
+    background: #142564 url(../img/menu-arrow-active-left.gif) no-repeat 100% 50%;
   }
   header ul li.active a {
-    color: #142564;
+    color: #ffffff;
     font-weight: bold;
   }
   header ul li:hover {
-    background: #e8dee9 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
+    background: #ffffff url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
   }
   #content {
     margin-left: 18%;
